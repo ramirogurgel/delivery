@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class=".col-xs-12 .col-sm-6 .col-lg-8">  
+  <% @md.each do |bd| %>
+   <div class="item-wrapper">
+    <div class="item-menu-img">
+ 
+    </div>
+    <div class="item-desc">
+  <h3><%=   %></h3>
+  <p><%= raw bd.css('.productsMenuDescription') %></p> 
+     <div class="item-prices">
+     <div class="icon-prices">
+     <%=  %>
+     </div>
+     <div class="delv-prices">
+  <%= %>
+     </div>
+     <div class="icon-prices">
+     <%=  %>
+     </div>
+     <div class="delv-prices">
+  <%= %>
+  </div>
+     </div>
+     <div class="select">
+     <div class="action-pr"><h3>Επιλογή</h3></div>
+     <button type="button" class="btn btn-warning ">
+     <a href="http://go.linkwi.se/z/11456-2/CD16153/?">ΔΟΚΙΜΑΣΕ ΤΟ</button>	
+     </div>
+     </div>
+    </div>
+  </div> 
+  <% end %>
+ </div>
+</div>
+

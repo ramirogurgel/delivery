@@ -1,0 +1,13 @@
+      <div class="adrress-select">
+        <h3>Πες μας διεύθυνση</h3>
+        <div class="form-infos">
+            <p>Ακολούθησε τη μορφή</p>
+            <h3>ΟΔΟΣ ΑΡΙΘΜΟΣ ΠΟΛΗ</h3>
+            <strong>π.χ. Ερμού 64, Αθήνα</strong>
+          </div>
+      </div>
+<%= form_tag home_map_path, method: :get, :class => "form-inline" do %>
+    <%= text_field_tag :adrress, params[:adrress], :required => true,  placeholder: "Πληκτρολόγησε εδώ την διεύθυνσή σου π.χ Ερμου 64 Αθήνα" %>
+    <%= submit_tag "ΠΑΜΕ", name: nil, class: "btn btn-info"  %>   
+<% end %>
+

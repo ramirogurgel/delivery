@@ -1,0 +1,367 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-image: url(/images/pitogyra_out.jpg);
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-brand>img {
+    display: block;
+    background-color: rgba(226, 225, 190, 0.75);
+}
+
+.navbar-top {
+    height: 112px;
+    background-image: url(/images/menu-background.png);
+    border-color: #963304;
+    border-bottom: 4px solid #963304;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(/images/big-pitsa.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+     -moz-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+          box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}
+
+.intro-header1 {
+    padding-top: 50px;
+    padding-bottom: 44px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(/images/global_chain.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    top: 130px;
+   -webkit-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+     -moz-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+          box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}
+
+.jumbotron {
+    background-image: url(/images/souvlakia.jpg);
+    height: 480px;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+.header-info {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(84, 55, 55, 0.6);
+    position: relative;
+    left: 16%;
+}
+
+form.form-inline {
+    padding: 5px;
+    text-align: center;
+}
+
+form-bar {
+    width: 100%;
+}
+
+.btn-adrress {
+    width: 80px;
+    height: 40px;
+    font-size: 22px;
+    background-color: red;
+    border-color: #70383C;
+    font-weight: bold;
+    position: relative;
+    left: 3%;
+}
+
+.anim-info {
+    width: 18em;
+    height: 3em;
+    margin: 1em auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+p.up.marquees {
+    font-size: 40px;
+}
+
+.marquees {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquees 10s linear infinite;
+}
+
+.marquees:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquees {
+    0%   { top:   8em }
+    100% { top: -11em }
+}
+
+/* Make it look pretty */
+.up .marquees {
+    margin: 0;
+    padding: 0 1em;
+    line-height: 1.5em;
+}
+
+.up:before, .up::before,
+.up:after,  .up::after {
+    left: 0;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 3em;
+}
+
+.up:after, .up::after {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.up:before, .up::before {
+    top: 0;
+}
+
+
+.marquee {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+/* Make it pretty */
+.sub {
+    padding-left: 1.5em;
+    position: relative;
+    font: 24px ;
+    position: relative;
+    left: 10px;
+    top: -40px;
+	margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+
+}
+
+.sub-form img {
+    position: relative;
+    left: 106px;
+    top: 10px;
+}
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 400px;
+}
+input#adrress {
+    color: #101110;
+    width: 500px;
+    height: 40px;
+    font-weight: bold;
+}
+.map.jumbotron {
+    background: rgba(243, 233, 228, 0.92);
+    -webkit-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+     -moz-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+          box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}
+
+.map-intro {
+    color: #777777;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  color: #101112;
+  transition: opacity 0.3s 0.2s ease; 
+  opacity: 0;
+}
+
+span.menu-intro {
+    position: relative;
+    top: -34px;
+    left: 32px;
+    color: #193A25;
+    font-weight: bolder;
+    text-shadow: 2px 1px 4px whitesmoke;
+    font-size: large;
+}
+
+.item-wrapper {
+    position: relative;
+    left: 5%;
+    padding-bottom: 2%;
+    font-size: medium;
+    width: 80%;
+    border-bottom: 2px solid;
+    min-height: 170px;
+}
+
+.item-wrapper h3 {
+    font-weight: bold;
+}
+
+.item-menu-img {
+    float: left;
+}
+
+.icon-prices{
+    width: 4%;
+    float: left;
+}
+
+.delv-prices {
+    width: 11%;
+    float: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: #046925;
+}
+
+.select {
+    width: 20%;
+    float: left;
+    display: block;
+    position: absolute;
+    left: 600px;
+    top: 56px;
+    text-align: center;
+    color: #EA571A;
+}
+
+.modal {
+    top: 120px !important ;
+}
+
+ul.thumbnails.image_picker_selector {
+  overflow: auto;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px; }
+  ul.thumbnails.image_picker_selector ul {
+    overflow: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+  ul.thumbnails.image_picker_selector li.group_title {
+    float: none; }
+  ul.thumbnails.image_picker_selector li {
+    margin: 0px 12px 12px 0px;
+    float: left;
+    width: 80px
+     }
+    ul.thumbnails.image_picker_selector li .thumbnail {
+      padding: 6px;
+      border: 1px solid #dddddd;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none; }
+      ul.thumbnails.image_picker_selector li .thumbnail img {
+        -webkit-user-drag: none; }
+    ul.thumbnails.image_picker_selector li .thumbnail.selected {
+      background: #0088cc; }
+
+div#messagebox {
+    background: rgba(247, 246, 239, 0.95);
+    width: 70%;
+    position: relative;
+    left: 5%;
+    color: #463030;
+    text-align: center;
+    font-size: large;
+    -webkit-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+     -moz-box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+  
+          box-shadow:
+     0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}

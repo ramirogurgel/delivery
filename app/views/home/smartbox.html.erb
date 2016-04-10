@@ -1,0 +1,51 @@
+<% content_for :head do %>
+<script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page
+        location.reload(true);
+    }
+});
+</script>
+<% end %>
+<div class="container">
+  <div class=".col-xs-12 .col-sm-6 .col-lg-8">  
+  <% @pitsa_img.zip(@pitsa).each do |img, p, u| %>
+   <div class="item-wrapper">
+    <div class="item-menu-img">
+  <%= image_tag img['src'] %>
+    </div>
+    <div class="item-desc">
+  <h3><%=  p.css('a.inline-url').text  %></h3>
+  <p><%= p.css('.item_desc').text %></p> 
+     <div class="item-prices">
+     <div class="icon-prices">
+     <%= image_tag('delivery.png', size: "32x32") %>
+     </div>
+     <div class="delv-prices">
+  <%= p.css('.take_away').text %>
+     </div>
+     <div class="icon-prices">
+     <%= image_tag('take_away.png', size: "32x32") %>
+     </div>
+     <div class="delv-prices">
+  <%= p.css('.delivery').text %>
+  </div>
+     </div>
+     <div class="select">
+     <div class="action-pr"><h3>Επιλογή</h3></div>
+     <button type="button" class="btn btn-warning ">
+     <a href="<%= ("http://www.pizzafan.gr#{p.css("a").attr('href')}")  %>">Αυτό</button>	
+     </div>
+     </div>
+    </div>
+  </div> 
+  <% end %>
+ </div>
+</div>
+

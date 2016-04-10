@@ -1,0 +1,26 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+  pool: 5
+
+development:
+  <<: *default
+  database: delivery_development
+  host: localhost
+  username: koskas1
+  password: kvf4444@
+
+test:
+  <<: *default
+  database: delivery_test
+  host: localhost
+  username: koskas1
+  password: kvf4444@
+
+production:
+  <<: *default
+  database: delivery_production
+  username: koskas1
+  password: <%= ENV['DELIVERY_DATABASE_PASSWORD'] %>
