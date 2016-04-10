@@ -14,7 +14,8 @@ $(document).ready(function(){
 </script>
 <% end %>
 <div class="container">
-  <div class=".col-xs-12 .col-sm-6 .col-lg-8">  
+  <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+  <div class="main-content">   
   <% @pitsa_img.zip(@pitsa).each do |img, p, u| %>
    <div class="item-wrapper">
     <div class="item-menu-img">
@@ -40,12 +41,12 @@ $(document).ready(function(){
      <div class="select">
      <div class="action-pr"><h3>Επιλογή</h3></div>
      <button type="button" class="btn btn-warning ">
-     <a href="<%= ("http://www.pizzafan.gr#{p.css("a").attr('href')}")  %>">Αυτό</button>	
+     <a href="<%= ("http://www.pizzafan.gr#{p.css("a").attr('href')}")  %>">Αυτό</a></button>	
      </div>
      </div>
-    </div>
-  </div> 
+    </div> 
   <% end %>
+  </div>
  </div>
 </div>
 
