@@ -73,6 +73,10 @@ body{
                 6px 6px 8px 17px #555;
 }
 
+.page-header{
+   color: whitesmoke; 
+}
+
 .jumbotron {
     background-image: url(/images/souvlakia.jpg);
     min-height: 480px;
@@ -368,4 +372,9 @@ div#messagebox {
 
 .main-content {
     background-color: #FFFFFF;
+}
+
+footer{
+    color: #FFFFFF;
+    margin-left: 5%;
 }
